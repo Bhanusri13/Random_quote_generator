@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Random Quote Generator</h2>
+        <p id="quote">Click the button to generate a quote.</p>
+        <button onclick="generateQuote()">New Quote</button>
+    </div>
+    <script>
+        const quotes = [
+            "The only limit to our realization of tomorrow is our doubts of today.",
+            "Do what you can, with what you have, where you are.",
+            "The future belongs to those who believe in the beauty of their dreams.",
+            "It does not matter how slowly you go as long as you do not stop.",
+            "Success is not final, failure is not fatal: It is the courage to continue that counts."
+        ];
+
+        function generateQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById("quote").textContent = quotes[randomIndex];
+        }
+    </script>
+</body>
+</html>
