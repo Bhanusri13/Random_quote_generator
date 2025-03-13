@@ -9,10 +9,7 @@ A simple web app that displays random motivational quotes. Built using **HTML, C
 ## How to Use  
 1. Clone or download this repository.  
 2. Open the `index.html` file in your browser.  
-3. Click the "New Quote" button to generate a random motivational quote.  
-
-## Live Demo  
-[Upload the project to GitHub Pages and add your live link here]  
+3. Click the "New Quote" button to generate a random motivational quote.   
 
 ## Technologies Used  
 - HTML  
